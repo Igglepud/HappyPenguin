@@ -130,5 +130,5 @@ preloadScene.preload = function () {
 };
 
 preloadScene.create = function () {
-  this.scene.start("Tutorial4");
+  this.scene.start("Title");
 };
