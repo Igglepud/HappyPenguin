@@ -48,14 +48,9 @@ preloadScene.preload = function () {
 
   var width = this.cameras.main.width;
   var height = this.cameras.main.height;
-  var loadingText = this.make.text({
-    x: width / 2,
-    y: height / 2 - 50,
-    text: "Making penguin happy...",
-    style: {
-      font: "20px monospace",
-      fill: "#ffffff",
-    },
+  var loadingText = this.add.text(width / 2, height / 2 - 50, "Making penguin happy...", {
+    font: "20px monospace",
+    fill: "#ffffff",
   });
   loadingText.setOrigin(0.5, 0.5);
 
@@ -127,8 +122,11 @@ preloadScene.preload = function () {
   this.load.audio("riseOfTheSaviour", "sounds/riseofthesaviour.mp3");
   this.load.audio("snowMusic1", "sounds/snowMusic1.mp3");
   this.load.audio("explosionSound", "sounds/explosion.wav");
+  
+  // Load the bitmap font
+  this.load.bitmapFont("happyPenguinFont", "remake/assets/images/happyPenguinFont.png", "remake/assets/images/happyPenguinFont.xml");
 };
 
 preloadScene.create = function () {
-  this.scene.start("Level20");
+  this.scene.start("Level03");
 };

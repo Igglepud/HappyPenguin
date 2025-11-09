@@ -897,14 +897,9 @@ iggleLoadingScreen=function(key){
      
      var width = this.cameras.main.width;
      var height = this.cameras.main.height;
-     var loadingText = this.make.text({
-         x: width / 2,
-         y: height / 2 - 50,
-         text: ''+key,
-         style: {
-             font: '20px monospace',
-             fill: '#ffffff'
-         }
+     var loadingText = this.add.text(width / 2, height / 2 - 50, ''+key, {
+         font: '20px monospace',
+         fill: '#ffffff'
      });
  loadingText.setOrigin(0.5, 0.5);
 

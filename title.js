@@ -19,11 +19,17 @@ titleScene.create = function(){
         this.rightDrapes.setScale(10);
         this.rightDrapes.depth=2;
     
-    this.act='Happy Penguin';
+    this.act='HAPPY PENGUIN';
     this.clickTextText='CLICK HERE TO START';
-    this.actText= this.add.text(125,300, this.act, {fontSize:'72px'});
-    this.clickText=this.add.text(125,375, this.clickTextText, {fontSize:'48px'});
-    this.clickText.setInteractive();
+    this.actText= this.add.bitmapText(125, 300, 'happyPenguinFont', this.act);
+    this.actText.setScale(0.5);
+    this.clickText=this.add.bitmapText(125, 400, 'happyPenguinFont', this.clickTextText);
+    this.clickText.setScale(0.3);
+    
+    // Make the entire area clickable with input
+    this.input.on('pointerdown', function() {
+        this.scene.start('Tutorial1');
+    }, this);
 
  
         this.clickText.moveTween=this.tweens.add({
@@ -34,13 +40,6 @@ titleScene.create = function(){
                             delay:500,
                             repeat:-1,
                                 });
-
-                                this.clickText.on('pointerdown',function(){
-                                   // this.scale.startFullscreen();
-
-                                    this.scene.start('Tutorial1')
-
-                                },this);
 
                                 this.leftDrapes.moveTween=this.tweens.add({
                                     targets:this.leftDrapes,

@@ -111,22 +111,26 @@ this.squishPenguin=function(){
 level22Scene.create = function(){
 
     //announce level
-    this.act='Happy Penguin';
-    this.actText= this.add.text(200,300, this.act, {fontSize:'72px'});
+    this.act='HAPPY PENGUIN';
+    this.actText= this.add.bitmapText(200, 300, 'happyPenguinFont', this.act);
+    this.actText.setScale(0.5);
     this.actText.depth=6
     
     //create border
     this.sideDrapes=this.add.sprite(400,-100, 'sideDrapes');
         this.sideDrapes.setScale(18);
         this.sideDrapes.depth=7;
+        this.sideDrapes.setScrollFactor(0);
     
     this.leftDrapes=this.add.sprite(-80,150, 'midDrapes');
         this.leftDrapes.setScale(10);
         this.leftDrapes.depth=7;
+        this.leftDrapes.setScrollFactor(0);
     
     this.rightDrapes=this.add.sprite(880,150, 'midDrapes');
         this.rightDrapes.setScale(10);
         this.rightDrapes.depth=7;
+        this.rightDrapes.setScrollFactor(0);
     
     //create control keys
     this.cursors=this.input.keyboard.createCursorKeys();
@@ -399,7 +403,7 @@ this.gasses.moveTween=this.tweens.add({
                     onComplete:function(){
                         this.actText.x=200;
                         this.actText.depth=10
-                        this.actText.setText('  Is not \n  complete')
+                        this.actText.text = '  IS NOT \N  COMPLETE';
                                          
                     this.actText.moveTween=this.tweens.add({
                    targets:this.actText,
@@ -407,7 +411,7 @@ this.gasses.moveTween=this.tweens.add({
                     duration:3000,
                     delay:500,
                     callbackScope:this,   
-                    onComplete:function(){this.actText.setText('Help Penguin \n  defeat \n   Santa')
+                    onComplete:function(){this.actText.text = 'HELP PENGUIN \N  DEFEAT \N   SANTA';
                                          
                     this.actText.moveTween=this.tweens.add({
                    targets:this.actText,
@@ -415,7 +419,7 @@ this.gasses.moveTween=this.tweens.add({
                     duration:2000,
                     delay:500,
                     callbackScope:this,   
-                    onComplete:function(){this.actText.setText('More levels')
+                    onComplete:function(){this.actText.text = 'MORE LEVELS';
                                                                                   
                     this.actText.moveTween=this.tweens.add({
                    targets:this.actText,
@@ -423,7 +427,7 @@ this.gasses.moveTween=this.tweens.add({
                     duration:2000,
                     delay:500,
                     callbackScope:this,   
-                    onComplete:function(){this.actText.setText('More enemies')
+                    onComplete:function(){this.actText.text = 'MORE ENEMIES';
                                                                                   
                     this.actText.moveTween=this.tweens.add({
                    targets:this.actText,
@@ -431,7 +435,7 @@ this.gasses.moveTween=this.tweens.add({
                     duration:2000,
                     delay:500,
                     callbackScope:this,   
-                    onComplete:function(){this.actText.setText('More Happy!')
+                    onComplete:function(){this.actText.text = 'MORE HAPPY!';
                                          
                                                             this.actText.moveTween=this.tweens.add({
                    targets:this.actText,
@@ -439,7 +443,7 @@ this.gasses.moveTween=this.tweens.add({
                     duration:2000,
                     delay:500,
                     callbackScope:this,   
-                    onComplete:function(){this.actText.setText('You click now!');
+                    onComplete:function(){this.actText.text = 'YOU CLICK NOW!';
                                           this.actText.x=this.actText.x-45;
                                           this.donate=this.add.sprite(this.gameW/2, this.actText.y+100, 'donate');
                                          this.donate.depth=99;
@@ -534,7 +538,7 @@ if(this.platform4.y>this.platform7.y&&this.penguin.body.touching.up==true){this.
                 this.cursors.right.isDown=false;
 
         this.penguin.body.setVelocityX(-100);
-        this.penguin.angle=this.penguin.angle-this.penguinRotation
+        this.penguin.angle=this.penguin.angle - this.penguinRotation;
         
     }
 
@@ -542,7 +546,7 @@ if(this.platform4.y>this.platform7.y&&this.penguin.body.touching.up==true){this.
    else if(this.cursors.right.isDown){
         this.cursors.left.isDown=false;
         this.penguin.body.setVelocityX(100);
-        this.penguin.angle=this.penguin.angle+this.penguinRotation}
+        this.penguin.angle=this.penguin.angle - this.penguinRotation}
     
     else{
         this.penguin.body.setVelocityX(0);

@@ -46,7 +46,7 @@ this.sliding=false;
                     callbackScope:this,
                     onComplete:function(){                                         this.cursors.left.isDown=false;
                                         this.actText.x=300
-                                        this.actText.setText('')
+                                        this.actText.text = '';
                         
                         
 this.actText.moveTween=this.tweens.add({
@@ -57,7 +57,7 @@ this.actText.moveTween=this.tweens.add({
                     delay:0,
                     callbackScope:this,
                     onComplete:function(){this.actText.x=125
-                                        this.actText.setText('')
+                                        this.actText.text = '';
                 this.actText.moveTween=this.tweens.add({
                    targets:this.actText,
                     y:301,
@@ -66,7 +66,7 @@ this.actText.moveTween=this.tweens.add({
                     delay:750,
                     callbackScope:this,
                     onComplete:function(){this.actText.x=150
-                                        this.actText.setText('')
+                                        this.actText.text = '';
                 
                         
 
@@ -132,7 +132,7 @@ this.actText.moveTween=this.tweens.add({
                     onComplete:function(){                                         this.cursors.left.isDown=false;
 
                                           this.actText.x=300
-                                        this.actText.setText('')
+                                        this.actText.text = '';
                         
                         
 this.actText.moveTween=this.tweens.add({
@@ -143,7 +143,7 @@ this.actText.moveTween=this.tweens.add({
                     delay:0,
                     callbackScope:this,
                     onComplete:function(){this.actText.x=300
-                                        this.actText.setText('')
+                                        this.actText.text = '';
                 this.actText.moveTween=this.tweens.add({
                    targets:this.actText,
                     y:301,
@@ -152,7 +152,7 @@ this.actText.moveTween=this.tweens.add({
                     delay:0,
                     callbackScope:this,
                     onComplete:function(){this.actText.x=300
-                                        this.actText.setText('')
+                                        this.actText.text = '';
                         
                     this.actText.moveTween=this.tweens.add({
                    targets:this.actText,
@@ -162,7 +162,7 @@ this.actText.moveTween=this.tweens.add({
                     delay:0,
                     callbackScope:this,
                     onComplete:function(){this.actText.x=200
-                                        this.actText.setText('!')
+                                        this.actText.text = '!';
                         
                     this.actText.moveTween=this.tweens.add({
                    targets:this.actText,
@@ -172,7 +172,7 @@ this.actText.moveTween=this.tweens.add({
                     delay:0,
                     callbackScope:this,
                     onComplete:function(){this.actText.x=200
-                                        this.actText.setText('')
+                                        this.actText.text = '';
                                           
                                           this.leftDrapes.moveTween=this.tweens.add({
                    targets:this.leftDrapes,
@@ -306,22 +306,26 @@ level04Scene.create = function(){
     
 });     
 this.santa.play('walkDown');
-     this.act='Act 1-4';
-    this.actText= this.add.text(300,300, this.act, {fontSize:'72px'});
+     this.act='ACT 1.4';
+    this.actText= this.add.bitmapText(300, 300, 'happyPenguinFont', this.act);
+    this.actText.setScale(0.45);
     this.actText.depth=2
-    this.actText.setColor('grey');
+    this.actText.setTint(0x00ff00);
          //make curtains
      this.sideDrapes=this.add.sprite(400,-100, 'sideDrapes');
         this.sideDrapes.setScale(18);
         this.sideDrapes.depth=4;
+        this.sideDrapes.setScrollFactor(0);
     
     this.leftDrapes=this.add.sprite(-40,150, 'midDrapes');
         this.leftDrapes.setScale(10);
         this.leftDrapes.depth=3;
+        this.leftDrapes.setScrollFactor(0);
     
     this.rightDrapes=this.add.sprite(880,150, 'midDrapes');
         this.rightDrapes.setScale(10);
         this.rightDrapes.depth=3;
+        this.rightDrapes.setScrollFactor(0);
 
    
     //move camera
@@ -441,7 +445,7 @@ level04Scene.update = function(){
                 this.cursors.right.isDown=false;
 
         this.penguin.body.setVelocityX(-100);
-        this.penguin.angle=this.penguin.angle-this.penguinRotation;
+        this.penguin.angle=this.penguin.angle - this.penguinRotation * (this.game.loop.delta / 16.67);
         
     }
 
@@ -449,16 +453,16 @@ level04Scene.update = function(){
    else if(this.cursors.right.isDown&&this.sliding==false){
         this.cursors.left.isDown=false;
         this.penguin.body.setVelocityX(100);
-        this.penguin.angle=this.penguin.angle+this.penguinRotation;}
+        this.penguin.angle=this.penguin.angle + this.penguinRotation * (this.game.loop.delta / 16.67);}
    
     else if(this.cursors.right.isDown&&this.sliding==true&&this.penguin.body.velocity.x<100){
         this.cursors.left.isDown=false;
         this.penguin.body.velocity.x+=2;
-        this.penguin.angle=this.penguin.angle+this.penguinRotation;}
+        this.penguin.angle=this.penguin.angle + this.penguinRotation * (this.game.loop.delta / 16.67);}
     else if(this.cursors.left.isDown&&this.sliding==true&&this.penguin.body.velocity.x>-100){
         this.cursors.left.isDown=false;
         this.penguin.body.velocity.x-=2;
-        this.penguin.angle=this.penguin.angle+this.penguinRotation;}
+        this.penguin.angle=this.penguin.angle + this.penguinRotation * (this.game.loop.delta / 16.67);}
     
     
     

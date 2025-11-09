@@ -56,7 +56,7 @@ this.win=function(){
                         this.cursors.left.isDown=false;
 
                                           this.actText.x=300
-                                        this.actText.setText('Good')
+                                        this.actText.text = 'GOOD';
                         
                         
 this.actText.moveTween=this.tweens.add({
@@ -67,7 +67,7 @@ this.actText.moveTween=this.tweens.add({
                     delay:0,
                     callbackScope:this,
                     onComplete:function(){this.actText.x=300
-                                        this.actText.setText('job!')
+                                        this.actText.text = 'JOB!';
                 this.actText.moveTween=this.tweens.add({
                    targets:this.actText,
                     y:301,
@@ -76,7 +76,7 @@ this.actText.moveTween=this.tweens.add({
                     delay:0,
                     callbackScope:this,
                     onComplete:function(){this.actText.x=300
-                                        this.actText.setText('Penguin')
+                                        this.actText.text = 'PENGUIN';
                         
                     this.actText.moveTween=this.tweens.add({
                    targets:this.actText,
@@ -86,7 +86,7 @@ this.actText.moveTween=this.tweens.add({
                     delay:0,
                     callbackScope:this,
                     onComplete:function(){this.actText.x=200
-                                        this.actText.setText('so happy!')
+                                        this.actText.text = 'SO HAPPY!';
                         
                     this.actText.moveTween=this.tweens.add({
                    targets:this.actText,
@@ -96,7 +96,7 @@ this.actText.moveTween=this.tweens.add({
                     delay:0,
                     callbackScope:this,
                     onComplete:function(){this.actText.x=200
-                                        this.actText.setText('Now game \n' +'start!')
+                                        this.actText.text = 'NOW GAME \n' +'START!';
                                           
                                           this.leftDrapes.moveTween=this.tweens.add({
                    targets:this.leftDrapes,
@@ -151,7 +151,7 @@ this.lose=function(){
                     callbackScope:this,
                     onComplete:function(){                                         this.cursors.left.isDown=false;
                                         this.actText.x=300
-                                        this.actText.setText('No!')
+                                        this.actText.text = 'NO!';
                         
                         
 this.actText.moveTween=this.tweens.add({
@@ -162,7 +162,7 @@ this.actText.moveTween=this.tweens.add({
                     delay:0,
                     callbackScope:this,
                     onComplete:function(){this.actText.x=125
-                                        this.actText.setText('That not right!')
+                                        this.actText.text = 'THAT NOT RIGHT!';
                 this.actText.moveTween=this.tweens.add({
                    targets:this.actText,
                     y:301,
@@ -171,7 +171,7 @@ this.actText.moveTween=this.tweens.add({
                     delay:750,
                     callbackScope:this,
                     onComplete:function(){this.actText.x=150
-                                        this.actText.setText('You try again!')
+                                        this.actText.text = 'YOU TRY AGAIN!';
                         this.leftDrapes.moveTween=this.tweens.add({
                    targets:this.leftDrapes,
                     x:-80,
@@ -282,8 +282,9 @@ this.anims.create({
       
     
     
-    this.act='Tutorial 4';
-    this.actText= this.add.text(300,300, this.act, {fontSize:'72px'});
+    this.act='TUTORIAL 4';
+    this.actText= this.add.bitmapText(300, 300, 'happyPenguinFont', this.act);
+    this.actText.setScale(0.45);
     this.actText.depth=1
          //make curtains
      this.sideDrapes=this.add.sprite(400,-100, 'sideDrapes');
@@ -364,7 +365,7 @@ this.ground.depth=1;
                     onComplete:function(){
                         this.actText.y=200
                         this.actText.x=150
-                        this.actText.setText('Defeat snowman \n'+ 'and be \n'+'king of \n'+ 'mountain!')}
+                        this.actText.text = 'DEFEAT SNOWMAN \n'+ 'AND BE \n'+'KING OF \n'+ 'MOUNTAIN!';}
                         });
     
     
@@ -499,7 +500,7 @@ tutorial4Scene.update = function(){
                 this.cursors.right.isDown=false;
 
         this.penguin.body.setVelocityX(-100);
-        this.penguin.angle=this.penguin.angle-this.penguinRotation
+        this.penguin.angle=this.penguin.angle - this.penguinRotation;
         
  
         
@@ -509,7 +510,7 @@ tutorial4Scene.update = function(){
                 this.cursors.left.isDown=false;
 
         this.penguin.body.setVelocityX(100);
-        this.penguin.angle=this.penguin.angle-this.penguinRotation
+        this.penguin.angle=this.penguin.angle - this.penguinRotation;
            
     }
 

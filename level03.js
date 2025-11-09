@@ -295,22 +295,26 @@ level03Scene.create = function(){
     
 });     
 
-     this.act='Act 1-3';
-    this.actText= this.add.text(300,300, this.act, {fontSize:'72px'});
+     this.act='ACT 1.3';
+    this.actText= this.add.bitmapText(300, 300, 'happyPenguinFont', this.act);
+    this.actText.setScale(0.45);
     this.actText.depth=2
-    this.actText.setColor('grey');
+    this.actText.setTint(0x00ff00);
          //make curtains
      this.sideDrapes=this.add.sprite(400,-100, 'sideDrapes');
         this.sideDrapes.setScale(18);
         this.sideDrapes.depth=4;
+        this.sideDrapes.setScrollFactor(0);
     
     this.leftDrapes=this.add.sprite(-40,150, 'midDrapes');
         this.leftDrapes.setScale(10);
         this.leftDrapes.depth=3;
+        this.leftDrapes.setScrollFactor(0);
     
     this.rightDrapes=this.add.sprite(880,150, 'midDrapes');
         this.rightDrapes.setScale(10);
         this.rightDrapes.depth=3;
+        this.rightDrapes.setScrollFactor(0);
 
    
     //move camera
@@ -468,7 +472,7 @@ level03Scene.update = function(){
                 this.cursors.right.isDown=false;
 
         this.penguin.body.setVelocityX(-100);
-        this.penguin.angle=this.penguin.angle-this.penguinRotation;
+        this.penguin.angle=this.penguin.angle - this.penguinRotation * (this.game.loop.delta / 16.67);
         
     }
 
@@ -476,7 +480,7 @@ level03Scene.update = function(){
    else if(this.cursors.right.isDown){
         this.cursors.left.isDown=false;
         this.penguin.body.setVelocityX(100);
-        this.penguin.angle=this.penguin.angle+this.penguinRotation;}
+        this.penguin.angle=this.penguin.angle + this.penguinRotation * (this.game.loop.delta / 16.67);}
     
     else{
         this.penguin.body.setVelocityX(0);

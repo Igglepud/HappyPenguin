@@ -23,7 +23,7 @@ this.win=function(){
                     onComplete:function(){                                         this.cursors.right.isDown=false;
                                           this.music.stop();
                                           this.actText.x=300
-                                        this.actText.setText('Yay!')
+                                        this.actText.text = 'YAY!';
                         
                         
 this.actText.moveTween=this.tweens.add({
@@ -35,7 +35,7 @@ this.actText.moveTween=this.tweens.add({
                     callbackScope:this,
                     onComplete:function(){this.music.stop();
                                         this.actText.x=300
-                                        this.actText.setText('You make')
+                                        this.actText.text = 'YOU MAKE';
                 this.actText.moveTween=this.tweens.add({
                    targets:this.actText,
                     y:301,
@@ -44,7 +44,7 @@ this.actText.moveTween=this.tweens.add({
                     delay:0,
                     callbackScope:this,
                     onComplete:function(){this.actText.x=300
-                                        this.actText.setText('penguin')
+                                        this.actText.text = 'PENGUIN';
                         
                     this.actText.moveTween=this.tweens.add({
                    targets:this.actText,
@@ -54,7 +54,7 @@ this.actText.moveTween=this.tweens.add({
                     delay:0,
                     callbackScope:this,
                     onComplete:function(){this.actText.x=275
-                                        this.actText.setText('so happy!')
+                                        this.actText.text = 'SO HAPPY!';
                         
                     this.actText.moveTween=this.tweens.add({
                    targets:this.actText,
@@ -64,7 +64,7 @@ this.actText.moveTween=this.tweens.add({
                     delay:0,
                     callbackScope:this,
                     onComplete:function(){this.actText.x=200
-                                        this.actText.setText('Now one \n' +'more level!')
+                                        this.actText.text = 'NOW ONE \n' +'MORE LEVEL!';
                                           
                                           this.leftDrapes.moveTween=this.tweens.add({
                    targets:this.leftDrapes,
@@ -119,7 +119,7 @@ this.music.stop();
                     callbackScope:this,
                     onComplete:function(){                                         this.cursors.left.isDown=false;
                                         this.actText.x=300
-                                        this.actText.setText('WRONG!')
+                                        this.actText.text = 'WRONG!';
                         
                         
 this.actText.moveTween=this.tweens.add({
@@ -130,7 +130,7 @@ this.actText.moveTween=this.tweens.add({
                     delay:0,
                     callbackScope:this,
                     onComplete:function(){this.actText.x=275
-                                        this.actText.setText('Why you \n' + 'no listen?')
+                                        this.actText.text = 'WHY YOU \n' + 'NO LISTEN?';
                 this.actText.moveTween=this.tweens.add({
                    targets:this.actText,
                     y:301,
@@ -139,7 +139,7 @@ this.actText.moveTween=this.tweens.add({
                     delay:750,
                     callbackScope:this,
                     onComplete:function(){this.actText.x=75
-                                        this.actText.setText('Now do it right!\n '+'')
+                                        this.actText.text = 'NOW DO IT RIGHT!\n '+'';
                         this.leftDrapes.moveTween=this.tweens.add({
                    targets:this.leftDrapes,
                     x:-80,
@@ -192,7 +192,7 @@ this.music.stop();
                     onComplete:function(){                                 
                                         this.cursors.left.isDown=false;
                                         this.actText.x=300
-                                        this.actText.setText('WHY?')
+                                        this.actText.text = 'WHY?';
                         
                         
 this.actText.moveTween=this.tweens.add({
@@ -203,7 +203,7 @@ this.actText.moveTween=this.tweens.add({
                     delay:0,
                     callbackScope:this,
                     onComplete:function(){this.actText.x=275
-                                        this.actText.setText('Why you \n' + 'do that?')
+                                        this.actText.text = 'WHY YOU \n' + 'DO THAT?';
                 this.actText.moveTween=this.tweens.add({
                    targets:this.actText,
                     y:301,
@@ -214,7 +214,7 @@ this.actText.moveTween=this.tweens.add({
                     onComplete:function(){
                                         this.actText.x=175
                                         this.actText.y=250
-                                        this.actText.setText(' Big bully!\n '+'Go back \n ' +'to start!')
+                                        this.actText.text = ' BIG BULLY!\n '+'GO BACK \n ' +'TO START!';
                         this.leftDrapes.moveTween=this.tweens.add({
                    targets:this.leftDrapes,
                     x:-80,
@@ -317,8 +317,9 @@ tutorial3Scene.create = function(){
     
     
     
-    this.act='Tutorial 3';
-    this.actText= this.add.text(300,300, this.act, {fontSize:'72px'});
+    this.act='TUTORIAL 3';
+    this.actText= this.add.bitmapText(300, 300, 'happyPenguinFont', this.act);
+    this.actText.setScale(0.45);
     this.actText.depth=2
          //make curtains
      this.sideDrapes=this.add.sprite(400,-100, 'sideDrapes');
@@ -390,11 +391,11 @@ this.ground.depth=1;
                     yoyo:false,
                     delay:5000,
                     callbackScope:this,
-                    onComplete:function(){this.actText.setText('Press ')
+                    onComplete:function(){this.actText.text = 'PRESS ';
                         this.silhouette=this.add.sprite(580,330,'penguinSilhouette').setInteractive();
                             this.silhouette.setScale(.06);
                                            //reveal control on silhouette click
-    this.silhouette.on('pointerdown', function(){this.actText.setText('Press ↑');
+    this.silhouette.on('pointerdown', function(){this.actText.text = 'PRESS UP';
                                                 this.silhouette.destroy();}, this);
     
                                          }

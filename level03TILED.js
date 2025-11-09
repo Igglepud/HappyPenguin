@@ -21,7 +21,7 @@ level03Scene.init = function(data){
                     callbackScope:this,
                     onComplete:function(){                                         this.cursors.left.isDown=false;
                                         this.actText.x=300
-                                        this.actText.setText('')
+                                        this.actText.text = '';
                         
                         
 this.actText.moveTween=this.tweens.add({
@@ -32,7 +32,7 @@ this.actText.moveTween=this.tweens.add({
                     delay:0,
                     callbackScope:this,
                     onComplete:function(){this.actText.x=125
-                                        this.actText.setText('')
+                                        this.actText.text = '';
                 this.actText.moveTween=this.tweens.add({
                    targets:this.actText,
                     y:301,
@@ -41,7 +41,7 @@ this.actText.moveTween=this.tweens.add({
                     delay:750,
                     callbackScope:this,
                     onComplete:function(){this.actText.x=150
-                                        this.actText.setText('')
+                                        this.actText.text = '';
                         this.leftDrapes.moveTween=this.tweens.add({
                    targets:this.leftDrapes,
                     x:-80,
@@ -100,7 +100,7 @@ this.actText.moveTween=this.tweens.add({
                     onComplete:function(){                                         this.cursors.left.isDown=false;
 
                                           this.actText.x=300
-                                        this.actText.setText('')
+                                        this.actText.text = '';
                         
                         
 this.actText.moveTween=this.tweens.add({
@@ -111,7 +111,7 @@ this.actText.moveTween=this.tweens.add({
                     delay:0,
                     callbackScope:this,
                     onComplete:function(){this.actText.x=300
-                                        this.actText.setText('')
+                                        this.actText.text = '';
                 this.actText.moveTween=this.tweens.add({
                    targets:this.actText,
                     y:301,
@@ -120,7 +120,7 @@ this.actText.moveTween=this.tweens.add({
                     delay:0,
                     callbackScope:this,
                     onComplete:function(){this.actText.x=300
-                                        this.actText.setText('')
+                                        this.actText.text = '';
                         
                     this.actText.moveTween=this.tweens.add({
                    targets:this.actText,
@@ -130,7 +130,7 @@ this.actText.moveTween=this.tweens.add({
                     delay:0,
                     callbackScope:this,
                     onComplete:function(){this.actText.x=200
-                                        this.actText.setText('!')
+                                        this.actText.text = '!';
                         
                     this.actText.moveTween=this.tweens.add({
                    targets:this.actText,
@@ -140,7 +140,7 @@ this.actText.moveTween=this.tweens.add({
                     delay:0,
                     callbackScope:this,
                     onComplete:function(){this.actText.x=200
-                                        this.actText.setText('')
+                                        this.actText.text = '';
                                           
                                           this.leftDrapes.moveTween=this.tweens.add({
                    targets:this.leftDrapes,
@@ -254,22 +254,26 @@ level03Scene.create = function(){
     
 });     
 
-     this.act='Act 1-3';
-    this.actText= this.add.text(300,300, this.act, {fontSize:'72px'});
+     this.act='ACT 1.3';
+    this.actText= this.add.bitmapText(300, 300, 'happyPenguinFont', this.act);
+    this.actText.setScale(0.45);
     this.actText.depth=2
-    this.actText.setColor('grey');
+    this.actText.setTint(0x00ff00);
          //make curtains
      this.sideDrapes=this.add.sprite(400,-100, 'sideDrapes');
         this.sideDrapes.setScale(18);
         this.sideDrapes.depth=4;
+        this.sideDrapes.setScrollFactor(0);
     
     this.leftDrapes=this.add.sprite(-40,150, 'midDrapes');
         this.leftDrapes.setScale(10);
         this.leftDrapes.depth=3;
+        this.leftDrapes.setScrollFactor(0);
     
     this.rightDrapes=this.add.sprite(880,150, 'midDrapes');
         this.rightDrapes.setScale(10);
         this.rightDrapes.depth=3;
+        this.rightDrapes.setScrollFactor(0);
     
 //create tilemap
  this.map= this.make.tilemap({key:'level03'});  
@@ -430,7 +434,7 @@ level03Scene.update = function(){
                 this.cursors.right.isDown=false;
 
         this.penguin.body.setVelocityX(-100);
-        this.penguin.angle=this.penguin.angle-this.penguinRotation
+        this.penguin.angle=this.penguin.angle - this.penguinRotation;
         
     }
 
@@ -438,7 +442,7 @@ level03Scene.update = function(){
    else if(this.cursors.right.isDown){
         this.cursors.left.isDown=false;
         this.penguin.body.setVelocityX(100);
-        this.penguin.angle=this.penguin.angle+this.penguinRotation}
+        this.penguin.angle=this.penguin.angle - this.penguinRotation}
     
     else{
         this.penguin.body.setVelocityX(0);

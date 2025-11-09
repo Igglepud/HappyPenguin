@@ -16,7 +16,7 @@ tutorial1Scene.init = function () {
         this.cursors.left.isDown = false;
         this.music.stop();
         this.actText.x = 300;
-        this.actText.setText("Hey");
+        this.actText.text = "HEY";
 
         this.actText.moveTween = this.tweens.add({
           targets: this.actText,
@@ -27,7 +27,7 @@ tutorial1Scene.init = function () {
           callbackScope: this,
           onComplete: function () {
             this.actText.x = 300;
-            this.actText.setText("wow!");
+            this.actText.text = "WOW!";
             this.actText.moveTween = this.tweens.add({
               targets: this.actText,
               y: 301,
@@ -37,7 +37,7 @@ tutorial1Scene.init = function () {
               callbackScope: this,
               onComplete: function () {
                 this.actText.x = 300;
-                this.actText.setText("You");
+                this.actText.text = "YOU";
 
                 this.actText.moveTween = this.tweens.add({
                   targets: this.actText,
@@ -48,7 +48,7 @@ tutorial1Scene.init = function () {
                   callbackScope: this,
                   onComplete: function () {
                     this.actText.x = 200;
-                    this.actText.setText("so good!");
+                    this.actText.text = "SO GOOD!";
 
                     this.actText.moveTween = this.tweens.add({
                       targets: this.actText,
@@ -59,7 +59,7 @@ tutorial1Scene.init = function () {
                       callbackScope: this,
                       onComplete: function () {
                         this.actText.x = 200;
-                        this.actText.setText("You try \n" + "next level!");
+                        this.actText.text = "YOU TRY \n" + "NEXT LEVEL!";
 
                         this.leftDrapes.moveTween = this.tweens.add({
                           targets: this.leftDrapes,
@@ -110,7 +110,7 @@ tutorial1Scene.init = function () {
       onComplete: function () {
         this.cursors.left.isDown = false;
         this.actText.x = 300;
-        this.actText.setText("No!");
+        this.actText.text = "NO!";
 
         this.actText.moveTween = this.tweens.add({
           targets: this.actText,
@@ -121,7 +121,7 @@ tutorial1Scene.init = function () {
           callbackScope: this,
           onComplete: function () {
             this.actText.x = 200;
-            this.actText.setText("Wrong button!!");
+            this.actText.text = "WRONG BUTTON!!";
             this.actText.moveTween = this.tweens.add({
               targets: this.actText,
               y: 301,
@@ -131,7 +131,7 @@ tutorial1Scene.init = function () {
               callbackScope: this,
               onComplete: function () {
                 this.actText.x = 150;
-                this.actText.setText("You try again!");
+                this.actText.text = "YOU TRY AGAIN!";
                 this.leftDrapes.moveTween = this.tweens.add({
                   targets: this.leftDrapes,
                   x: -80,
@@ -226,8 +226,9 @@ tutorial1Scene.init = function () {
 
 // create after preload
 tutorial1Scene.create = function () {
-  this.act = "Tutorial 1";
-  this.actText = this.add.text(300, 300, this.act, { fontSize: "72px" });
+  this.act = "TUTORIAL 1";
+  this.actText = this.add.bitmapText(300, 300, 'happyPenguinFont', this.act);
+  this.actText.setScale(0.45);
   this.actText.depth = 2;
   //make curtains
   this.sideDrapes = this.add.sprite(400, -100, "sideDrapes");
@@ -297,7 +298,7 @@ tutorial1Scene.create = function () {
     delay: 1500,
     callbackScope: this,
     onComplete: function () {
-      this.actText.setText("Press ←");
+      this.actText.text = "PRESS LEFT";
     },
   });
   //create controls for mobile
