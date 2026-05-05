@@ -1,0 +1,818 @@
+{
+	"textures": [
+		{
+			"image": "snowmanBlack.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 881,
+				"h": 1321
+			},
+			"scale": 0.25,
+			"frames": [
+				{
+					"filename": "__snowman_black_outfit_die_006.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 306,
+						"h": 296
+					},
+					"spriteSourceSize": {
+						"x": 47,
+						"y": 225,
+						"w": 227,
+						"h": 52
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 227,
+						"h": 52
+					}
+				},
+				{
+					"filename": "__snowman_black_outfit_die_008.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 306,
+						"h": 296
+					},
+					"spriteSourceSize": {
+						"x": 83,
+						"y": 226,
+						"w": 159,
+						"h": 52
+					},
+					"frame": {
+						"x": 230,
+						"y": 1,
+						"w": 159,
+						"h": 52
+					}
+				},
+				{
+					"filename": "__snowman_black_outfit_die_009.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 306,
+						"h": 296
+					},
+					"spriteSourceSize": {
+						"x": 83,
+						"y": 226,
+						"w": 159,
+						"h": 52
+					},
+					"frame": {
+						"x": 391,
+						"y": 1,
+						"w": 159,
+						"h": 52
+					}
+				},
+				{
+					"filename": "__snowman_black_outfit_die_005.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 306,
+						"h": 296
+					},
+					"spriteSourceSize": {
+						"x": 44,
+						"y": 224,
+						"w": 233,
+						"h": 53
+					},
+					"frame": {
+						"x": 552,
+						"y": 1,
+						"w": 233,
+						"h": 53
+					}
+				},
+				{
+					"filename": "__snowman_black_outfit_die_007.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 306,
+						"h": 296
+					},
+					"spriteSourceSize": {
+						"x": 68,
+						"y": 225,
+						"w": 198,
+						"h": 53
+					},
+					"frame": {
+						"x": 1,
+						"y": 55,
+						"w": 198,
+						"h": 53
+					}
+				},
+				{
+					"filename": "__snowman_black_outfit_die_004.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 306,
+						"h": 296
+					},
+					"spriteSourceSize": {
+						"x": 60,
+						"y": 217,
+						"w": 201,
+						"h": 59
+					},
+					"frame": {
+						"x": 201,
+						"y": 55,
+						"w": 201,
+						"h": 59
+					}
+				},
+				{
+					"filename": "__snowman_black_outfit_die_002.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 306,
+						"h": 296
+					},
+					"spriteSourceSize": {
+						"x": 83,
+						"y": 186,
+						"w": 201,
+						"h": 92
+					},
+					"frame": {
+						"x": 404,
+						"y": 56,
+						"w": 201,
+						"h": 92
+					}
+				},
+				{
+					"filename": "__snowman_black_outfit_die_003.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 306,
+						"h": 296
+					},
+					"spriteSourceSize": {
+						"x": 69,
+						"y": 185,
+						"w": 204,
+						"h": 92
+					},
+					"frame": {
+						"x": 607,
+						"y": 56,
+						"w": 204,
+						"h": 92
+					}
+				},
+				{
+					"filename": "__snowman_black_outfit_move_003.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 306,
+						"h": 296
+					},
+					"spriteSourceSize": {
+						"x": 65,
+						"y": 54,
+						"w": 158,
+						"h": 168
+					},
+					"frame": {
+						"x": 1,
+						"y": 110,
+						"w": 158,
+						"h": 168
+					}
+				},
+				{
+					"filename": "__snowman_black_outfit_move_007.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 306,
+						"h": 296
+					},
+					"spriteSourceSize": {
+						"x": 42,
+						"y": 108,
+						"w": 164,
+						"h": 168
+					},
+					"frame": {
+						"x": 161,
+						"y": 116,
+						"w": 164,
+						"h": 168
+					}
+				},
+				{
+					"filename": "__snowman_black_outfit_die_001.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 306,
+						"h": 296
+					},
+					"spriteSourceSize": {
+						"x": 83,
+						"y": 104,
+						"w": 180,
+						"h": 172
+					},
+					"frame": {
+						"x": 327,
+						"y": 150,
+						"w": 180,
+						"h": 172
+					}
+				},
+				{
+					"filename": "__snowman_black_outfit_move_002.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 306,
+						"h": 296
+					},
+					"spriteSourceSize": {
+						"x": 53,
+						"y": 70,
+						"w": 155,
+						"h": 172
+					},
+					"frame": {
+						"x": 509,
+						"y": 150,
+						"w": 155,
+						"h": 172
+					}
+				},
+				{
+					"filename": "__snowman_black_outfit_move_001.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 306,
+						"h": 296
+					},
+					"spriteSourceSize": {
+						"x": 55,
+						"y": 104,
+						"w": 161,
+						"h": 173
+					},
+					"frame": {
+						"x": 666,
+						"y": 150,
+						"w": 161,
+						"h": 173
+					}
+				},
+				{
+					"filename": "__snowman_black_outfit_die_000.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 306,
+						"h": 296
+					},
+					"spriteSourceSize": {
+						"x": 46,
+						"y": 90,
+						"w": 171,
+						"h": 186
+					},
+					"frame": {
+						"x": 1,
+						"y": 286,
+						"w": 171,
+						"h": 186
+					}
+				},
+				{
+					"filename": "__snowman_black_outfit_idle_000.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 306,
+						"h": 296
+					},
+					"spriteSourceSize": {
+						"x": 46,
+						"y": 90,
+						"w": 171,
+						"h": 186
+					},
+					"frame": {
+						"x": 1,
+						"y": 286,
+						"w": 171,
+						"h": 186
+					}
+				},
+				{
+					"filename": "__snowman_black_outfit_idle_001.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 306,
+						"h": 296
+					},
+					"spriteSourceSize": {
+						"x": 46,
+						"y": 89,
+						"w": 171,
+						"h": 187
+					},
+					"frame": {
+						"x": 174,
+						"y": 324,
+						"w": 171,
+						"h": 187
+					}
+				},
+				{
+					"filename": "__snowman_black_outfit_idle_019.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 306,
+						"h": 296
+					},
+					"spriteSourceSize": {
+						"x": 46,
+						"y": 89,
+						"w": 171,
+						"h": 187
+					},
+					"frame": {
+						"x": 347,
+						"y": 324,
+						"w": 171,
+						"h": 187
+					}
+				},
+				{
+					"filename": "__snowman_black_outfit_idle_002.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 306,
+						"h": 296
+					},
+					"spriteSourceSize": {
+						"x": 46,
+						"y": 87,
+						"w": 172,
+						"h": 189
+					},
+					"frame": {
+						"x": 520,
+						"y": 325,
+						"w": 172,
+						"h": 189
+					}
+				},
+				{
+					"filename": "__snowman_black_outfit_idle_017.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 306,
+						"h": 296
+					},
+					"spriteSourceSize": {
+						"x": 47,
+						"y": 87,
+						"w": 171,
+						"h": 189
+					},
+					"frame": {
+						"x": 694,
+						"y": 325,
+						"w": 171,
+						"h": 189
+					}
+				},
+				{
+					"filename": "__snowman_black_outfit_idle_003.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 306,
+						"h": 296
+					},
+					"spriteSourceSize": {
+						"x": 47,
+						"y": 86,
+						"w": 171,
+						"h": 190
+					},
+					"frame": {
+						"x": 1,
+						"y": 474,
+						"w": 171,
+						"h": 190
+					}
+				},
+				{
+					"filename": "__snowman_black_outfit_idle_018.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 306,
+						"h": 296
+					},
+					"spriteSourceSize": {
+						"x": 46,
+						"y": 87,
+						"w": 172,
+						"h": 189
+					},
+					"frame": {
+						"x": 174,
+						"y": 513,
+						"w": 172,
+						"h": 189
+					}
+				},
+				{
+					"filename": "__snowman_black_outfit_idle_004.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 306,
+						"h": 296
+					},
+					"spriteSourceSize": {
+						"x": 47,
+						"y": 86,
+						"w": 172,
+						"h": 190
+					},
+					"frame": {
+						"x": 348,
+						"y": 516,
+						"w": 172,
+						"h": 190
+					}
+				},
+				{
+					"filename": "__snowman_black_outfit_idle_016.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 306,
+						"h": 296
+					},
+					"spriteSourceSize": {
+						"x": 47,
+						"y": 86,
+						"w": 172,
+						"h": 190
+					},
+					"frame": {
+						"x": 522,
+						"y": 516,
+						"w": 172,
+						"h": 190
+					}
+				},
+				{
+					"filename": "__snowman_black_outfit_idle_005.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 306,
+						"h": 296
+					},
+					"spriteSourceSize": {
+						"x": 47,
+						"y": 85,
+						"w": 172,
+						"h": 191
+					},
+					"frame": {
+						"x": 696,
+						"y": 516,
+						"w": 172,
+						"h": 191
+					}
+				},
+				{
+					"filename": "__snowman_black_outfit_move_000.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 306,
+						"h": 296
+					},
+					"spriteSourceSize": {
+						"x": 46,
+						"y": 83,
+						"w": 167,
+						"h": 193
+					},
+					"frame": {
+						"x": 1,
+						"y": 666,
+						"w": 167,
+						"h": 193
+					}
+				},
+				{
+					"filename": "__snowman_black_outfit_idle_015.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 306,
+						"h": 296
+					},
+					"spriteSourceSize": {
+						"x": 47,
+						"y": 85,
+						"w": 172,
+						"h": 191
+					},
+					"frame": {
+						"x": 170,
+						"y": 704,
+						"w": 172,
+						"h": 191
+					}
+				},
+				{
+					"filename": "__snowman_black_outfit_idle_006.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 306,
+						"h": 296
+					},
+					"spriteSourceSize": {
+						"x": 47,
+						"y": 84,
+						"w": 173,
+						"h": 192
+					},
+					"frame": {
+						"x": 344,
+						"y": 708,
+						"w": 173,
+						"h": 192
+					}
+				},
+				{
+					"filename": "__snowman_black_outfit_idle_014.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 306,
+						"h": 296
+					},
+					"spriteSourceSize": {
+						"x": 47,
+						"y": 84,
+						"w": 173,
+						"h": 192
+					},
+					"frame": {
+						"x": 519,
+						"y": 708,
+						"w": 173,
+						"h": 192
+					}
+				},
+				{
+					"filename": "__snowman_black_outfit_idle_007.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 306,
+						"h": 296
+					},
+					"spriteSourceSize": {
+						"x": 48,
+						"y": 83,
+						"w": 173,
+						"h": 193
+					},
+					"frame": {
+						"x": 694,
+						"y": 709,
+						"w": 173,
+						"h": 193
+					}
+				},
+				{
+					"filename": "__snowman_black_outfit_idle_008.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 306,
+						"h": 296
+					},
+					"spriteSourceSize": {
+						"x": 48,
+						"y": 83,
+						"w": 174,
+						"h": 193
+					},
+					"frame": {
+						"x": 1,
+						"y": 897,
+						"w": 174,
+						"h": 193
+					}
+				},
+				{
+					"filename": "__snowman_black_outfit_idle_012.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 306,
+						"h": 296
+					},
+					"spriteSourceSize": {
+						"x": 48,
+						"y": 83,
+						"w": 174,
+						"h": 193
+					},
+					"frame": {
+						"x": 177,
+						"y": 902,
+						"w": 174,
+						"h": 193
+					}
+				},
+				{
+					"filename": "__snowman_black_outfit_idle_013.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 306,
+						"h": 296
+					},
+					"spriteSourceSize": {
+						"x": 48,
+						"y": 83,
+						"w": 173,
+						"h": 193
+					},
+					"frame": {
+						"x": 353,
+						"y": 902,
+						"w": 173,
+						"h": 193
+					}
+				},
+				{
+					"filename": "__snowman_black_outfit_idle_009.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 306,
+						"h": 296
+					},
+					"spriteSourceSize": {
+						"x": 48,
+						"y": 82,
+						"w": 175,
+						"h": 194
+					},
+					"frame": {
+						"x": 528,
+						"y": 904,
+						"w": 175,
+						"h": 194
+					}
+				},
+				{
+					"filename": "__snowman_black_outfit_idle_010.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 306,
+						"h": 296
+					},
+					"spriteSourceSize": {
+						"x": 49,
+						"y": 82,
+						"w": 175,
+						"h": 194
+					},
+					"frame": {
+						"x": 705,
+						"y": 904,
+						"w": 175,
+						"h": 194
+					}
+				},
+				{
+					"filename": "__snowman_black_outfit_idle_011.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 306,
+						"h": 296
+					},
+					"spriteSourceSize": {
+						"x": 48,
+						"y": 82,
+						"w": 175,
+						"h": 194
+					},
+					"frame": {
+						"x": 1,
+						"y": 1097,
+						"w": 175,
+						"h": 194
+					}
+				},
+				{
+					"filename": "__snowman_black_outfit_move_004.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 306,
+						"h": 296
+					},
+					"spriteSourceSize": {
+						"x": 66,
+						"y": 15,
+						"w": 174,
+						"h": 200
+					},
+					"frame": {
+						"x": 178,
+						"y": 1097,
+						"w": 174,
+						"h": 200
+					}
+				},
+				{
+					"filename": "__snowman_black_outfit_move_005.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 306,
+						"h": 296
+					},
+					"spriteSourceSize": {
+						"x": 88,
+						"y": 8,
+						"w": 190,
+						"h": 211
+					},
+					"frame": {
+						"x": 354,
+						"y": 1100,
+						"w": 190,
+						"h": 211
+					}
+				},
+				{
+					"filename": "__snowman_black_outfit_move_006.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 306,
+						"h": 296
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 56,
+						"w": 202,
+						"h": 220
+					},
+					"frame": {
+						"x": 546,
+						"y": 1100,
+						"w": 202,
+						"h": 220
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:bd691150014983013d04f2256eb288fe:0d86cf8036b08f8e39115e7ba9bc6c5d:4741d0dae3e3c5921790fc2206ffa039$"
+	}
+}

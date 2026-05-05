@@ -226,6 +226,10 @@ tutorial1Scene.init = function () {
 
 // create after preload
 tutorial1Scene.create = function () {
+  this.input.on('pointerdown', function() {
+    this.sys.game.canvas.style.cursor = 'crosshair';
+  }, this);
+  
   this.act = "TUTORIAL 1";
   this.actText = this.add.bitmapText(300, 300, 'happyPenguinFont', this.act);
   this.actText.setScale(0.45);
